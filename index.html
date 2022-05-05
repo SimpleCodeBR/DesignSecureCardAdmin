@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureCard Admin</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/39dd37eebf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-white menu-lateral">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="Hyperativa SecureCard Admin">
+                <div>
+                    <h2>SecureCard</h2>
+                    <span class="light">Admin</span>
+                </div>
+            </div>
+            <nav>
+                <a href="">
+                    <i class="fa-light fa-chart-line fa-fw"></i>Dashboard
+                </a>
+                <a href="" class="ativo">
+                    <i class="fa-solid fa-display-code fa-fw"></i>Aplicações
+                </a>
+                <a href="">
+                    <i class="fa-light fa-key fa-fw"></i>Permissões
+                </a>
+                <a href="">
+                    <i class="fa-light fa-code-branch fa-fw"></i>Fluxos
+                </a>
+                <a href="">
+                    <i class="fa-light fa-list-check fa-fw"></i>Requisições
+                </a>
+                <a href="">
+                    <i class="fa-light fa-gear fa-fw"></i>Configurações
+                </a>
+            </nav>
+            <div class="usuarios">
+                <div>
+                    <strong>Usuários</strong>
+                </div>
+                <div>
+                    <div>Rodrigo Lima</div>
+                    <div>
+                        (você) <img src="assets/img/usuario-online.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>Alexandre Mattar</div>
+                    <div>
+                        <img src="assets/img/usuario-online.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>Vanessa Ortega</div>
+                    <div>
+                        <img src="assets/img/usuario-offline.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <a href="" class="light">
+                        <i class="fa-light fa-user-plus"></i>Autorizar usuário...
+                    </a>
+                </div>
+            </div>
+            <div class="recolher-menu">
+                <a href="">
+                    <i class="fa-light fa-arrow-left-to-line fa-fw"></i>
+                </a>
+            </div>
+        </div>
+        <div class="principal">
+            <div class="bg-white menu-topo">
+                <div>
+                    <h2>Dashboard</h2>
+                    <span class="light">Olá, Rodrigo, bem-vindo de volta!</span>
+                </div>
+                <nav>
+                    <div>
+                        <a href="" class="light">
+                            <i class="fa-light fa-magnifying-glass"></i>Pesquisar...
+                        </a>
+                    </div>
+                    <div class="change-mode">
+                        <i class="fa-light fa-sun-bright fa-fw"></i>
+                        <label class="switch-titulo">
+                            <input type="checkbox">
+                            <span class="switch-controle"></span>
+                        </label>
+                        <i class="fa-light fa-moon fa-fw"></i>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fa-light fa-bell fa-fw"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="avatar">
+                            <img src="assets/faces/confused.png" alt="">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="conteudo">
+                <div>
+                    <div class="breadcrumbs">
+                        <a href="" class="light">Home</a>
+                        <i class="fa-solid fa-chevron-right light"></i>
+                        <a href="" class="light">Aplicações</a>
+                        <i class="fa-solid fa-chevron-right light"></i>
+                        <a href="" class="ativo">Nova</a>
+                    </div>
+                    <div class="margem-32">
+                        <h1>Cadastrar nova aplicação</h1>
+                        <form>
+                            <div class="margem-80">
+                                <p>
+                                    <strong>Nome</strong>
+                                </p>
+                                <p>
+                                    <span class="light">Para identificar a aplicação</span>
+                                </p>
+                                <input type="text" name="nome-app" id="nome-app">
+                            </div>
+                            <div class="margem-80">
+                                <p>
+                                    <strong>Senha</strong>
+                                </p>
+                                <p>
+                                    <span class="light">Para encriptar o certificado</span>
+                                </p>
+                                <input type="password" name="senha-app" id="senha-app">
+                            </div>
+                            <div class="margem-80">
+                                <button>Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="alertas">
+                    <p>
+                        <strong>Aplicação salva!</strong>
+                    </p>
+                    <p class="light">
+                        Os dados abaixo foram gerados para esta aplicação. Salve o GUID e faça o download do certificado.
+                    </p>
+                    <p class="margem-32">
+                        <strong>GUID</strong>
+                    </p>
+                    <p class="light">
+                        0f8fad5b-d9cb-469f-a165-70867728950e
+                    </p>
+                    <div class="arquivos margem-32">
+                        <a href="">
+                            <i class="fa-light fa-file-certificate"></i>
+                        </a>
+                        <div>
+                            <p>
+                                <strong>Certificado</strong>
+                            </p>
+                            <p class="light">
+                                PFX • 240 kb
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

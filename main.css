@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #f0f4f9;
+    color: #1f253f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a {
+    color: #1f253f;
+    text-decoration: none;
+}
+
+i {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #ebecf5;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.light {
+    color: #9da6c1;
+}
+
+.ativo {
+    color: #10a8ab;
+    font-weight: bold;
+}
+
+.menu-lateral {
+    width: 100%;
+    max-width: 352px;
+    padding: 32px;
+}
+
+.menu-lateral i {
+    margin-right: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.menu-lateral nav {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.usuarios {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.usuarios div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usuarios img {
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+}
+
+.recolher-menu {
+    margin-top: 200px;
+}
+
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-topo {
+    display: flex;
+    justify-content: space-between;
+    height: 105px;
+    padding: 32px;
+}
+
+.menu-topo nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.fa-magnifying-glass {
+    margin-right: 16px;
+}
+
+.avatar img {
+    height: 36px;
+    width: 36px;
+}
+
+.switch-titulo {
+    position: relative;
+    bottom: 2px;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+}
+
+.switch-titulo input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-controle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #edba45;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.switch-controle:before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+input:checked + .switch-controle {
+    background-color: #10a8ab;
+}
+
+input:checked + .switch-controle:before {
+    transform: translateX(12px);
+}
+
+.conteudo {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo div {
+    width: 100%;
+}
+
+.alertas {
+    max-width: 320px;
+    border-radius: 16px;
+    padding: 32px;
+    background-color: #fff;
+}
+
+.arquivos {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.arquivos i {
+    font-size: 36px;
+}
+
+.breadcrumbs i {
+    margin: 0 8px 0 8px;
+    font-size: 10px;
+}
+
+.margem-32 {
+    margin-top: 32px;
+}
+
+.margem-80 {
+    margin-top: 80px;
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 437px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    padding-left: 16px;
+}
+
+button {
+    width: 203px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    background-color: #10a8ab;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
